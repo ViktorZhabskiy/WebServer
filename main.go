@@ -1,8 +1,8 @@
 package main
 
 import (
-	"awesomeProject/handlers"
-	"awesomeProject/middleware"
+	"WebServer/handlers"
+	"WebServer/middleware"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 )
