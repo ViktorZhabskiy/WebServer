@@ -9,10 +9,18 @@ pipeline {
   }
 
   stages {
-    stage('first step') {
+    stage('go build') {
       steps {
         script {
-          sh '''ls -l'''
+          sh '''go build'''
+        }
+      }
+    }
+
+    stage('go test') {
+      steps {
+        script {
+          sh '''go test'''
         }
       }
     }
